@@ -1,0 +1,300 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    background-color: #f7f7ff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333131;
+
+}
+
+img {
+    max-width: 100%; /*images scale if needed*/
+    height: auto;
+}
+.big-box-container { /*sets mobile width for everything*/
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    width: 275px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    padding-top: none;
+
+}
+/*=================================================BOSS BOX=======================================================*/
+.boss-container img.logo { 
+    width: 115px;
+    max-width: 100%;
+    height: auto;
+}
+.boss-container h1{
+    font-size: 60px;
+    line-height: 75px;
+    color: #333131;
+}
+.boss-container p {
+    font-size: 24px;
+    line-height: 30px;
+    color: #333131;
+}
+/*=================================================APPLICATION BOX=======================================================*/
+.application-box {  /*sets width and colours*/
+    background: white;
+    box-shadow: 6px 6px 17px grey;
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding: 20px;
+    display: block;
+}
+.application-box h2 {
+    font-size: 40px;
+}
+.application-box h3{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.application-box input[type=text]{
+    width: 100%;
+    padding: 15px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color:#f9f9fa;
+    color: #9b9b9b;
+}
+.check-container {
+    margin-top: 15px;
+}
+.checkmark {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    vertical-align: middle;
+}
+label.check-container {
+    font-size: 12px;
+}
+.application-box button {
+        width: 100%;
+        background-color: #57eeab;
+        padding: 12px;
+        margin-top: 15px;
+        border: none;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 12px;
+        cursor: pointer;
+}
+.applied {
+    font-size: 14px;
+    margin-top: 15px;
+}
+.applied a{
+    color: #ff8480;
+    text-decoration: none;
+}
+/*=================================================FOOTER BOX=======================================================*/
+footer {    /*sets background for everything in footer*/
+    background-color: #fffd8c;
+    margin: auto;
+
+}
+.earn-container{
+    width: 275px;
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+}
+.earn-container h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 70px;
+}
+.earn-container p {
+    font-size: 16px;
+    padding-top: 10px;
+}
+.calculate-container {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns:repeat(4,1fr);
+    margin-bottom: 30px;
+    grid-template-areas:
+    "hours city city city"
+    "calc calc calc calc";
+}
+.calculate-container input[type=text]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color:#f9f9fa;
+    color: #9b9b9b;
+}
+.calculate-container button {
+    width: 100%;
+    background-color: #ff8480;
+    color: #f9f9fa;
+    padding:6px;
+    margin-top: 10px;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.calculate-container .block:nth-child(1) {
+    grid-area: hours;
+}
+.calculate-container .block:nth-child(2) {
+    grid-area: city;
+    margin-left: 10px;
+}
+.calculate-container .block:nth-child(3) {
+    grid-area: calc;
+}
+.facebook {
+    border-radius: 50%;
+}
+
+.icons .block{
+    display: inline;
+    padding: 15px;
+    
+}
+
+@media (min-width: 481px) { /*===========================================TABLET======================================*/
+    .big-box-container {
+        width: 600px;
+    }
+    /*=================================================BOSS BOX=======================================================*/
+    .boss-container {
+        margin-bottom: 350px;
+    }
+    .boss-container h1{
+        font-size: 80px;
+        padding-right: 20px;
+        line-height: 100px;
+    }
+    .boss-container p {
+        font-size: 24px;
+        padding-right: 50px;
+
+    }
+    .scooter {
+        display: none;
+    }
+    .background-scooter{/*sets scooter as a background image*/
+        background-image: url(../images/bg-image/scooter.svg);
+        background-repeat: no-repeat;
+        background-position: 50% 46.5% ;
+        background-size: 80%;
+    }
+    /*=================================================APPLICATION BOX=======================================================*/
+    .application-box h3{
+        font-size: 30px;
+    }
+    .applied {
+        font-size: 14px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .applied a{
+        color: #ff8480;
+        text-decoration: none;
+        text-align: center;
+    }
+    /*=================================================FOOTER BOX=======================================================*/
+    .earn-container{
+        width: 600px;
+    }
+    .calculate-container { 
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns:repeat(5,1fr);
+        margin-bottom: 30px;
+        grid-template-areas:
+        "hours city city calc calc";
+    }
+
+
+    .calculate-container .block:nth-child(3) {
+        margin-left: 10px;
+        padding-right: 30px;
+
+    }
+
+    .icons{
+        display: flex;
+        justify-content:center;
+    }
+
+}
+@media (min-width: 1025px) {    /*===========================================DESKTOP======================================*/
+.background-scooter{
+    background-size: 40%;
+}
+
+.big-box-container {
+    width: 150%;
+}
+.inline-container {/*turns BOSS BOX and APPLICATION BOX into grid*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+/*=================================================BOSS BOX=======================================================*/
+.boss-container h1 {
+    margin-top:100px;
+    margin-bottom: 60px;
+}
+.boss-container {
+    width: 500px;
+    margin: auto;
+    padding-left: 100px;
+}
+    /*=================================================APPLICATION BOX=======================================================*/
+.application-box {
+    width:500px;
+    margin: auto;
+    margin-right: 100px;
+    margin-top: 300px;
+
+}
+/*=================================================FOOTER BOX=======================================================*/
+footer {
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 100%;
+    display: inline-block;
+}
+.icons {        
+    float: right;
+    margin: auto;
+    
+}
+.earn-container{
+    width: 100%;
+}
+.calculate-container {
+    float: left;
+    margin: auto;
+}
+
+}
